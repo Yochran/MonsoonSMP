@@ -1,0 +1,23 @@
+name: MonsoonSMP
+version: ${project.version}
+main: me.yochran.monsoon.MonsoonSMP
+api-version: 1.16
+authors: [Yochran]
+description: A smaller but more organized and advanced SMP core for Monsoon SMP.
+commands:
+  Monsoon:
+    description: Get the plugin information and help page.
+    usage: /<command>
+    aliases: [monsoonsmp, smp, smpcore, monsoonsmpcore]
+  Afk:
+    description: Set your afk status.
+    usage: /<command>
+    aliases: [afkstatus, afkplayer]
+  Deaths:
+    description: Get the amount of deaths for you, a player, or the server as a whole.
+    usage: /<command>
+    aliases: [deathcounter, deathcount, death]
+  ResetDeaths:
+    description: Reset a player's deaths.
+    usage: /<command>
+    aliases: [rd, resetplayerdeaths, rpd]
