@@ -30,9 +30,9 @@ public class AfkListener implements Listener {
             for (Player players : Bukkit.getOnlinePlayers()) {
                 Utils.sendMessage(players, player.getDisplayName() + " &ais no longer &2AFK&a.");
             }
-            plugin.afk_timer.remove(player.getUniqueId());
-            plugin.afk_timer.put(player.getUniqueId(), 0);
         }
+        plugin.afk_timer.remove(player.getUniqueId());
+        plugin.afk_timer.put(player.getUniqueId(), 0);
     }
 
     @EventHandler
@@ -44,8 +44,8 @@ public class AfkListener implements Listener {
             for (Player players : Bukkit.getOnlinePlayers()) {
                 Utils.sendMessage(players, player.getDisplayName() + " &ais no longer &2AFK&a.");
             }
-            plugin.afk_timer.remove(player.getUniqueId());
-            plugin.afk_timer.put(player.getUniqueId(), 0);
         }
+        plugin.afk_timer.remove(player.getUniqueId());
+        plugin.afk_timer.put(player.getUniqueId(), 0);
     }
 }

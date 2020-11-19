@@ -27,6 +27,7 @@ public class AfkRunnable extends BukkitRunnable {
                     } else {
                         plugin.afk_timer.remove(players.getUniqueId());
                         plugin.afk.add(players.getUniqueId());
+                        nitrogen.setPlayerColor(players);
                         for (Player onlinePlayers : Bukkit.getOnlinePlayers()) {
                             onlinePlayers.sendMessage(ChatColor.translateAlternateColorCodes('&', players.getDisplayName() + "&a is now &2AFK&a."));
                         }

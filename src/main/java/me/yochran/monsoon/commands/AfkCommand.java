@@ -26,13 +26,11 @@ public class AfkCommand implements CommandExecutor {
             if (plugin.afk.contains(player.getUniqueId())) {
                 plugin.afk.remove(player.getUniqueId());
                 plugin.afk_timer.remove(player.getUniqueId());
-                player.sendMessage(ChatColor.GREEN + "You are no longer AFK.");
                 for (Player onlinePlayers : Bukkit.getOnlinePlayers()) {
                     onlinePlayers.sendMessage(ChatColor.translateAlternateColorCodes('&', player.getDisplayName() + "&a is no longer &2AFK&a."));
                 }
             } else {
                 plugin.afk.add(player.getUniqueId());
-                player.sendMessage(ChatColor.GREEN + "You are now AFK.");
                 plugin.afk_timer.remove(player.getUniqueId());
                 for (Player onlinePlayers : Bukkit.getOnlinePlayers()) {
                     onlinePlayers.sendMessage(ChatColor.translateAlternateColorCodes('&', player.getDisplayName() + "&a is now &2AFK&a."));
